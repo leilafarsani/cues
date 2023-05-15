@@ -25,9 +25,31 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## I installed additional dependencies 
+## Additional dependencies 
+
+I installed additional dependencies to make my project come to life
 
 - npm install bcrypt mongodb mongoose next-auth
+## Arranging the Folders
+### New app folder
+I deleted the app folder to start from complete scratch, then I created a new one in the root of the directory.
+### components folder
+I created another folder for my reuseable components, not in the app folder but in the root directory and call it components.
+### models folder
+Then I created another folder calls models. This is going to be for Mongodb Mongoose DB models.
+### New public folder
+I deleted the public folder and provided another new one.
+### styles folder
+I created an empty folder for styles.
+### utils folder
+I created another folder called utils for my utility functions that I'm going to use throughout my application 
+
+### .env file
+I created a file called .env for environment variables inside of which I can store secure keys
+
+#### Before starting building my app 
+I compiled a list of assets icons and styles this project will use, to make the development of the parts that really matter in this app easier.  
+
 
 
 
