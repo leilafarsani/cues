@@ -48,7 +48,8 @@ I created another folder called utils for my utility functions that I'm going to
 I created a file called .env for environment variables inside of which I can store secure keys
 
 #### Before starting building my app 
-I compiled a list of assets icons and styles this project will use, to make the development of the parts that really matter in this app easier.  
+I compiled a list of assets icons and styles this project will use, to make the development of the parts that really matter in this app easier. 
+For this I updated the tailwind.config.js file, provided a CSS file named globals.css 
 
 
 
