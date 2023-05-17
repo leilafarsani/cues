@@ -49,10 +49,41 @@ I created a file called .env for environment variables inside of which I can sto
 
 #### Before starting building my app 
 I compiled a list of assets icons and styles this project will use, to make the development of the parts that really matter in this app easier. 
-For this I updated the tailwind.config.js file, provided a CSS file named globals.css 
+For this I updated the tailwind.config.js file, provided a CSS file named globals.css and also added assets folder to the public folder. assets folder contains icons and images.
 
 
+### YAY Let's Start!
+Now let's dive into the app directory and figure out how I want to start developing my application 
 
+### add new file (page.jsx)
+I added a new file within the app folder called page.jsx. It is that unique file that's going to render our homepage
+
+####
+In the page file I used rafce to create react arrow function and rename it with the name Home
+
+### add layout file 
+This is second important file that should be added. I called it layout.jsx and again with using rafce, I created react function. I didn't need to important react. I imported globals.css file. I didn't need to mention the entire path and just did 
+#### import "@styles/globals.css";
+Because of this I edited jsconfig.json file such as 
+
+ "compilerOptions": {
+    "paths": {
+      "@*": ["./*"]
+    }
+  }
+
+This is going to import CSS to my entire application.
+- I changed the metadata of my application.
+- Finally I wrapped everything in an HTML tag and specified the language. I have a body tag and within the body, I have a div with a className main and within it I have another self-closed dig with the className gradient (This is just going to change the background) and finally I have another main tag with className app and within it we want to render all the children and I gave it through as a props so we get the children from that props.
+As we know the layout will be wrapped around everything. 
+
+- I renamed the layout too RootLayout also.
+- Finally I just exported it.
+
+### jsconfig.json
+
+after updating the layout file I got the error Module not found: Can't resolve '@styles/globals.css'
+So I had to go to jsconfig.json and update it by remove the / from @/*.
 
 
 
