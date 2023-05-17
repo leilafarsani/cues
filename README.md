@@ -85,7 +85,10 @@ As we know the layout will be wrapped around everything.
 after updating the layout file I got the error Module not found: Can't resolve '@styles/globals.css'
 So I had to go to jsconfig.json and update it by remove the / from @/*.
 
-
+### Updating my Home Component in page.jsx to implement my homepage 
+I try to update my Home Component in page.jsx file with semantic HTML that I need to use to develop the homepage of my application.
+##### I shall use some specific classes in Tailwind 
+### Note that Whenever we see underscore it means they came from my own styling in global.css 
 
 
 
