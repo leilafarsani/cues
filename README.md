@@ -71,14 +71,20 @@ Because of this I edited jsconfig.json file such as
       "@*": ["./*"]
     }
   }
-
+##### Next.js makes it so easy to know the path.
 This is going to import CSS to my entire application.
+
+#### Also
 - I changed the metadata of my application.
 - Finally I wrapped everything in an HTML tag and specified the language. I have a body tag and within the body, I have a div with a className main and within it I have another self-closed dig with the className gradient (This is just going to change the background) and finally I have another main tag with className app and within it we want to render all the children and I gave it through as a props so we get the children from that props.
 As we know the layout will be wrapped around everything. 
 
 - I renamed the layout too RootLayout also.
 - Finally I just exported it.
+
+#### I updated my homepage (page.jsx)
+
+### Creating my navbar (Nav component/Nav.jsx within components directory)
 
 ### jsconfig.json
 
@@ -89,6 +95,14 @@ So I had to go to jsconfig.json and update it by remove the / from @/*.
 I try to update my Home Component in page.jsx file with semantic HTML that I need to use to develop the homepage of my application.
 ##### I shall use some specific classes in Tailwind 
 ### Note that Whenever we see underscore it means they came from my own styling in global.css 
+## Navbar
+I created and imported Nav component in layout.jsx and put it as <Nav/> in the the main section, above the {children}, so my navbar can be shown in my entire application.
+### For creating the navbar I first imported Link from Next/link so that allows me to move to the other pages in my application. 
+#### I also import the image tag for Next/image that is going to automatically optimize the images for us.
+#### I also imported signIn, signOut, useSession, getProviders from next-auth/'react. These utility function are going to make sign-in and sign-out flow very simple.
+
+#### Finally I created the jsx part of my navigation bar.
+
 
 
 
