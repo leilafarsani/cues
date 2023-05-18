@@ -34,13 +34,13 @@ const Nav = () => {
       <div className="sm:flex hidden">
         {isUserLoggedIn ? (
           <div className="flex gap-3 md:gap-5">
-            <Link href="/" className="black_btn">
+            <Link href="/create-cue" className="black_btn">
               Create Post
             </Link>
             <button type="button" onClick={signOut} className="outline_btn">
               Sign Out
             </button>
-            <Link href="/">
+            <Link href="/profile">
               <Image
                 src="/assets/images/logo.png"
                 width={40}
@@ -83,14 +83,14 @@ const Nav = () => {
             {toggleDropdown && (
               <div className="dropdown">
                 <Link
-                  href="/"
+                  href="/profile"
                   className="dropdown_link"
                   onClick={() => setToggleDropdown(false)}
                 >
                   My Profile
                 </Link>
                 <Link
-                  href="/"
+                  href="/create-cue"
                   className="dropdown_link"
                   onClick={() => setToggleDropdown(false)}
                 >
